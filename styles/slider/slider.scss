@@ -1,0 +1,44 @@
+.main-container {
+  border: 1px solid black;
+  width: 900px;
+  height: 900px;
+  position: relative;
+  // position doesn't matter on what it is, its just so the images have a ancestor
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 900px 100%;
+  }
+
+  .background-img {
+    background-image: url("../../images/image-1.png");
+
+  }
+
+  .foreground-img {
+    background-image: url("../../images/image-2.png");
+    border-right: 3px solid #102521;
+  }
+
+  #slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      height: 15px;
+      width: 15px;
+      border: 1px solid black;
+      background-color: #102521;
+      border-radius: 50%;
+    }
+  }
+}

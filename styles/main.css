@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  border: 1px solid black;
+  width: 900px;
+  height: 900px;
+  position: relative;
+}
+.main-container .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 900px 100%;
+}
+.main-container .background-img {
+  background-image: url("../../images/image-1.png");
+}
+.main-container .foreground-img {
+  background-image: url("../../images/image-2.png");
+  border-right: 3px solid #102521;
+}
+.main-container #slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.main-container #slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  background-color: #102521;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
