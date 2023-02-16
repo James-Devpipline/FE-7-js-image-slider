@@ -6,5 +6,7 @@ slider.addEventListener("input", e => {
   console.log(sliderValue);
 
   foregroundImage.style.width = `${sliderValue}%`;
-})
+});
+
+console.log("What are you looking in here for?");
 
